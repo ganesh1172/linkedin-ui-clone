@@ -1,0 +1,10 @@
+#app_container
+{
+    min-height: 100vh;
+    background-color: #fff;
+}
+.head
+{
+    height: 8px;
+    background-color: #283e4a;
+}
