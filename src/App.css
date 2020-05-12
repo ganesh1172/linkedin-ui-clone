@@ -10,13 +10,17 @@
     text-align: center;
     padding-top: 52px;
     margin-bottom: 24px;
-    min-height: calc(100vh - 72px);
+    min-height: calc(100vh - 102px);
     float:none;
 }
 .head
 {
     height: 8px;
     background-color: #283e4a;
+}
+.header_logo
+{
+    padding: 32px 0 24px 0;
 }
 .footer
 {
@@ -38,7 +42,7 @@
     font-weight: 400;
     color: rgba(0,0,0,0.6);
 }
-img{
+.footer_logo{
     height: 20px;
     position: relative;
     right: 3px; 
@@ -50,7 +54,7 @@ img{
 }
 .footer_nav li
 {
-    font-size: 13px;
+    font-size: 12px;
     box-sizing: border-box;
     color: rgba(0,0,0,0.9);
     cursor: pointer;
@@ -60,12 +64,26 @@ img{
     height: 24px;
     line-height: 24px;
     overflow: hidden;
-    padding: 0 6px;
+    padding: 0 5px;
     position: relative;
     text-align: center;
     text-decoration: none;
     transition-duration: 167ms;
-    transition-timing-function: cubic-bezier(0, 0, 0.57, 0.9);
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
     vertical-align: middle;
     z-index: 0;
+}
+@media only screen and (max-width: 769px)
+{
+    .app_content
+    {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        margin-bottom: 0px;
+    }
+.footer {
+    display: none;
+}
 }
