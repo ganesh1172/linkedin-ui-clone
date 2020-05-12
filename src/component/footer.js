@@ -1,13 +1,14 @@
 import React from 'react';
 import { Container, Typography } from '@material-ui/core';
 import '../App.css';
+import 'typeface-roboto';
 
 function Footer() {
     return (
         <div className="footer">
             <Container max-width="xs" >
                 <div className="footer_wrapper">
-                    <img src="/image/Icon.png" alt="Logo" />
+                    <img src="/image/Icon.png" alt="Logo" className="footer_logo" />
                     <Typography variant="body2" className="copyright">
                         &copy; 2020
                     </Typography>
