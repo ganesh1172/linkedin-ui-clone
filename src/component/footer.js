@@ -1,15 +1,26 @@
 import React from 'react';
 import { Container, Typography } from '@material-ui/core';
 import '../App.css';
-import CopyrightIcon from '@material-ui/icons/Copyright';
 
 function Footer() {
     return (
-        <div>
+        <div className="footer">
             <Container max-width="xs" >
-                <Typography variant="body1">
-                    <CopyrightIcon fontSize="small" />
-                </Typography>
+                <div className="footer_wrapper">
+                    <img src="/image/Icon.png" alt="Logo" />
+                    <Typography variant="body2" className="copyright">
+                        &copy; 2020
+                    </Typography>
+                    <ul class="footer_nav">
+                        <li>User Agreement</li>
+                        <li>Privacy Policy</li>
+                        <li>Community Guidelines</li>
+                        <li>Cookie Policy</li>
+                        <li>Copyright Policy</li>
+                        <li>Send Feedback</li>
+
+                    </ul>
+                </div>
             </Container>
         </div>
     );
