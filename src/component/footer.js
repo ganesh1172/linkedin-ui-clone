@@ -12,7 +12,7 @@ function Footer() {
                     <Typography variant="body2" className="copyright">
                         &copy; 2020
                     </Typography>
-                    <ul class="footer_nav">
+                    <ul className="footer_nav">
                         <li>User Agreement</li>
                         <li>Privacy Policy</li>
                         <li>Community Guidelines</li>
