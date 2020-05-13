@@ -22,6 +22,17 @@
 {
     padding: 32px 0 24px 0;
 }
+.help
+{
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 0;
+    font-weight: 600;
+    margin: 0 0;
+    left:440px;
+    text-align: left;
+    color: #d11124;
+}
 .footer
 {
     height: 72px;
@@ -73,7 +84,7 @@
     vertical-align: middle;
     z-index: 0;
 }
-@media only screen and (max-width: 769px)
+@media only screen and (max-width: 960px)
 {
     .app_content
     {
@@ -85,5 +96,11 @@
     }
 .footer {
     display: none;
+}
+.help
+{
+    position: relative;
+    left:0;
+    text-align: left;
 }
 }
