@@ -4,8 +4,11 @@ import './App.css';
 import 'typeface-roboto';
 import Footer from './component/footer';
 import { makeStyles } from '@material-ui/core/styles';
+import useForm from "./useForm";
+import validate from './LoginFormValidationRules';
 
-const useStyles = makeStyles({
+
+const useStyles = makeStyles((theme) => ({
   title: {
     fontWeight: 410,
     paddingBottom: 4,
@@ -15,10 +18,16 @@ const useStyles = makeStyles({
   },
   text_style: {
     width: '45ch',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
     marginBottom: 12,
   },
   btn_style: {
     width: '360px',
+    [theme.breakpoints.down('sm')]: {
+      width: '100%',
+    },
     padding: '12px 0',
     marginTop: '8px',
     textTransform: 'initial',
@@ -41,11 +50,21 @@ const useStyles = makeStyles({
   j_Now: {
     textDecoration: 'none',
   }
-});
+}));
 
 
 function App() {
   const classes = useStyles();
+  const {
+    values,
+    errors,
+    handleChange,
+    handleSubmit,
+  } = useForm(login, validate);
+
+  function login() {
+    console.log('No errors, submit callback called!');
+  }
   return (
     <div id="app_container">
       <header className="head">
@@ -57,11 +76,18 @@ function App() {
           <Typography variant="body1" color="textSecondary" className={classes.title2}>
             Don't miss your next opportunity. Sign in to stay updated on your professional world.
           </Typography>
-          <form>
-            <TextField id="standard-basic" label="Email or Phone" medium variant="filled" className={classes.text_style} /><br />
-            <TextField id="filled-basic" label="Email or Phone" small variant="filled" className={classes.text_style} />
+          <form onSubmit={handleSubmit} noValidate>
+            <TextField id="standard-basic" label="Email or Phone" type="email" name="email" variant="filled" className={classes.text_style} onChange={handleChange} value={values.email || ''} required />
+            {errors.email && (
+              <p className="help">{errors.email}</p>
+            )}
             <br />
-            <Button variant="contained" size="large" color="primary" className={classes.btn_style}>
+            <TextField id="filled-basic" label="Password" type="password" name="password" variant="filled" className={classes.text_style} onChange={handleChange} value={values.password || ''} required />
+            {errors.password && (
+              <p className="help">{errors.password}</p>
+            )}
+            <br />
+            <Button variant="contained" size="large" color="primary" type="submit" className={classes.btn_style}>
               Sign in
             </Button>
           </form>
