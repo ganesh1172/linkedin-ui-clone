@@ -20,6 +20,8 @@
 }
 .header_logo
 {
+    width: 84px;
+    height: 21px;
     padding: 32px 0 24px 0;
 }
 .help
@@ -54,8 +56,10 @@
     color: rgba(0,0,0,0.6);
 }
 .footer_logo{
-    height: 20px;
+    width: 56px;
+    height: 17px;
     position: relative;
+    top:2px;
     right: 3px; 
 }
 .footer_nav
