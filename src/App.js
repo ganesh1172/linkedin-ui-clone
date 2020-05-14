@@ -6,6 +6,7 @@ import Footer from './component/footer';
 import { makeStyles } from '@material-ui/core/styles';
 import useForm from "./useForm";
 import validate from './LoginFormValidationRules';
+import Img from './Image/header_logo.png';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -71,7 +72,7 @@ function App() {
       </header>
       <div className="app_content">
         <Container max-width="sm">
-          <img src="/image/Icon.png" alt="logo" className="header_logo" />
+          <img src={Img} alt="logo" className="header_logo" />
           <Typography variant="h5" className={classes.title}>Welcome Back</Typography>
           <Typography variant="body1" color="textSecondary" className={classes.title2}>
             Don't miss your next opportunity. Sign in to stay updated on your professional world.
@@ -94,7 +95,7 @@ function App() {
           <div>
             <Button color="primary" className={classes.btn_forpass}>Forgot password?</Button>
             <Typography variant="body1" className={classes.new_join}>
-              New to LinkedIn? <Link href="#" className={classes.j_now}>
+              New to LinkedIn? <Link href="/forgetPassword" className={classes.j_now}>
                 Join now
       </Link>
             </Typography>
