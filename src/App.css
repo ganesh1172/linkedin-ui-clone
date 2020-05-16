@@ -1,3 +1,6 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
 #app_container
 {
     min-height: 100vh;
@@ -31,7 +34,7 @@
     line-height: 0;
     font-weight: 600;
     margin: 0 0;
-    left:440px;
+    left:420px;
     text-align: left;
     color: #d11124;
 }
