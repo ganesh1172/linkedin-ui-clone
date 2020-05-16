@@ -1,0 +1,8 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+#app_container
+{
+    min-height: 100vh;
+    background-color: #fff;
+}
