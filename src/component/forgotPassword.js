@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from './footer';
 import './forgotPassword.css';
-import Img from '../Image/header_logo.png';
+import forgot_img from '../Image/header_logo.png';
 import { Link } from 'react-router-dom';
 import { Typography, TextField, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -42,6 +42,12 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             width: 'calc(50% - 8px)',
             margin: '24px 0px',
+        },
+        border: '1px solid #0073b1',
+        color: '#006097',
+        '&:hover': {
+            backgroundColor: '#E5F5FC',
+            color: '#006097',
         }
     },
     form_submit: {
@@ -51,6 +57,11 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             width: 'calc(50% - 8px)',
             margin: '24px 8px',
+        },
+        backgroundColor: '#0073b1',
+        '&:hover': {
+            backgroundColor: '#006097',
+            color: '#fff',
         }
     }
 
@@ -73,7 +84,7 @@ function ForgotPassword() {
             <header>
                 <div className="nav_head">
                     <div className="nav_container">
-                        <img src={Img} alt="logo" className="nav_logo" />
+                        <img src={forgot_img} alt="logo" className="nav_logo" />
                         <nav className="nav_content">
                             <Link to="App" className="nav_signin">Sign in</Link>
                             <Link to="/joinNow" className="nav_joinnow">Join now</Link>
