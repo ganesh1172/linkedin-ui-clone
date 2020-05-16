@@ -21,11 +21,12 @@
     height: 8px;
     background-color: #283e4a;
 }
-.header_logo
+.main_logo
 {
     width: 84px;
-    height: 21px;
-    padding: 32px 0 24px 0;
+    height: 20px;
+    margin-top: 5px;
+
 }
 .help
 {
@@ -37,6 +38,12 @@
     left:420px;
     text-align: left;
     color: #d11124;
+}
+.remember_me
+{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
 }
 .footer
 {
