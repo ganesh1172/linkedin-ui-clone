@@ -1,8 +1,68 @@
 *{
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
 #app_container
 {
     min-height: 100vh;
     background-color: #fff;
+}
+.page
+{
+    display: flex;
+    flex-direction: column;
+}
+.join_main
+{
+    width: 100%;
+    max-width: 1128px;
+    margin: 0 auto;
+    flex: 1 0 auto;
+    padding: 16px 0;
+}
+.join_header
+{
+    display: block;
+}
+.logo_container
+{
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+}
+.join_logo
+{   
+    width: 135px;
+    height: 50px;
+    margin: 0px;
+}
+.join_body
+{
+    width: 440px;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+}
+.join_formContainer
+{
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    display: flex;
+    max-width: 440px;
+    padding-bottom: 15px;
+    flex-flow: row wrap;
+   box-orient: horizontal;
+    box-direction: normal;
+}
+.join_error
+{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.9);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    color: #d11124;
 }
