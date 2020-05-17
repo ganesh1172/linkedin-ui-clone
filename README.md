@@ -1,6 +1,6 @@
 <h1 align="center">
 	<img
-		width="300"
+		width="200"
 		alt="LinkedIn logo"
 		src="src/Image/header_logo.png">
 </h1>                                                              
