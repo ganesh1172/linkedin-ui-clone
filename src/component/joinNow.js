@@ -97,8 +97,8 @@ function JoinNow() {
                         </div>
                         <Typography variant="body2" className={classes.join_aggrement}>By clicking Agree &amp; Join, you agree to the LinkedIn <Link to="#">User Agreement</Link>, <Link to="#">Privacy Policy</Link>, and <Link to="#">Cookie Policy</Link>.</Typography>
                         <Button variant="contained" className={classes.btn_continue} type="submit">
-                            <Link to="#" target="_self" style={{ textDecoration: "none", color: "#fff" }}>Agree &amp; Join</Link></Button>
-                        <Typography variant="body1" className={classes.join_Already}>Already on LinkedIn? <Link to="/App" style={{ textDecoration: "none" }}>Sign in</Link>
+                            <Link to="/join_now" target="_self" style={{ textDecoration: "none", color: "#fff" }}>Agree &amp; Join</Link></Button>
+                        <Typography variant="body1" className={classes.join_Already}>Already on LinkedIn? <Link to="/sign_in" style={{ textDecoration: "none" }}>Sign in</Link>
                         </Typography>
                     </section>
                 </form>

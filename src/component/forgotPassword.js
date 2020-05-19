@@ -86,8 +86,8 @@ function ForgotPassword() {
                     <div className="nav_container">
                         <img src={forgot_img} alt="logo" className="nav_logo" />
                         <nav className="nav_content">
-                            <Link to="App" className="nav_signin">Sign in</Link>
-                            <Link to="/joinNow" className="nav_joinnow">Join now</Link>
+                            <Link to="/sign_in" className="nav_signin">Sign in</Link>
+                            <Link to="/join_now" className="nav_joinnow">Join now</Link>
                         </nav>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ function ForgotPassword() {
                             <div>{errors.email && (<p className="input_error">{errors.email}</p>)}</div>
                         </div>
                         <div className="form_action">
-                            <Button variant="outlined" color="primary" className={classes.form_cancel}><Link to="/App" className="btn_cancel">Cancel</Link></Button>
+                            <Button variant="outlined" color="primary" className={classes.form_cancel}><Link to="/sign_in" className="btn_cancel">Cancel</Link></Button>
                             <Button variant="contained" color="primary" type="submit" className={classes.form_submit}>Find account</Button>
                         </div>
                     </form>
