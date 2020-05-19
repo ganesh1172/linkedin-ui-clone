@@ -5,7 +5,7 @@
 		src="src/Image/header_logo.png">
 </h1>                                                              
 
-<h3 align="center">World's largest professional network website clone.</h3>
+<h3 align="center">World's largest professional network website UI clone.</h3>
 
 <h1 align="center">
 	<img
