@@ -4,8 +4,8 @@ import './joinNow.css';
 import join from '../Image/join_logo.png';
 import { Typography, TextField, Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
-import useForm from "../useForm";
-import validate from '../LoginFormValidationRules';
+import useForm from "../validation/useForm";
+import validate from '../validation/LoginFormValidationRules';
 import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({

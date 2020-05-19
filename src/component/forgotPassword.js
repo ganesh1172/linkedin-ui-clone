@@ -5,8 +5,8 @@ import forgot_img from '../Image/header_logo.png';
 import { Link } from 'react-router-dom';
 import { Typography, TextField, Button } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import useForm from "../useForm";
-import validate from '../LoginFormValidationRules';
+import useForm from "../validation/useForm";
+import validate from '../validation/LoginFormValidationRules';
 
 const useStyles = makeStyles((theme) => ({
     content_header: {
