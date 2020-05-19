@@ -89,7 +89,7 @@ function SignIn() {
             <div className="app_content">
                 <Container max-width="sm">
                     <img src={main_logo} alt="logo" className="main_logo" />
-                    <Typography variant="h5" className={classes.title}>Welcome Back</Typography>
+                    <Typography variant="h5" className={classes.title}>Welcome Back!</Typography>
                     <Typography variant="body1" color="textSecondary" className={classes.title2}>
                         Don't miss your next opportunity. Sign in to stay updated on your professional world.
             </Typography>
