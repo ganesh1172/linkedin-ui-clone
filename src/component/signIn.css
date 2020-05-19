@@ -1,0 +1,125 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+#app_container
+{
+    min-height: 100vh;
+    background-color: #fff;
+}
+.app_content
+{
+    box-sizing: border-box;
+    margin: auto;
+    text-align: center;
+    padding-top: 52px;
+    margin-bottom: 24px;
+    min-height: calc(100vh - 102px);
+    float:none;
+}
+.head
+{
+    height: 8px;
+    background-color: #283e4a;
+}
+.main_logo
+{
+    width: 84px;
+    height: 20px;
+    margin-top: 5px;
+
+}
+.help
+{
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 0;
+    font-weight: 600;
+    margin: 0 0;
+    left:420px;
+    text-align: left;
+    color: #d11124;
+}
+.remember_me
+{
+    display: flex;
+    justify-content: center;
+    margin: 0px 180px 0px 0px;
+}
+.footer
+{
+    height: 72px;
+    border-top: 1px solid #ECECEC;
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+}
+.footer_wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.copyright
+{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.6);
+}
+.footer_logo{
+    width: 56px;
+    height: 17px;
+    position: relative;
+    top:2px;
+    right: 3px; 
+}
+.footer_nav
+{
+    display: flex;
+    list-style: none;
+}
+.footer_nav li
+{
+    font-size: 12px;
+    box-sizing: border-box;
+    color: rgba(0,0,0,0.9);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    font-family: inherit;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0 5px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 167ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    vertical-align: middle;
+    z-index: 0;
+}
+@media only screen and (max-width: 960px)
+{
+    .app_content
+    {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        margin-bottom: 0px;
+    }
+    .remember_me
+    {
+        display: flex;
+        justify-content: flex-start;
+    }
+.footer {
+    display: none;
+}
+.help
+{
+    position: relative;
+    left:0;
+    text-align: left;
+}
+}
