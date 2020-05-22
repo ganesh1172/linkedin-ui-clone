@@ -48,11 +48,11 @@
     font-size: 1rem;
     font-weight: 500;
     font-family: inherit;
-    height: 32px;
-    line-height: 32px;
+    height: 40px;
+    line-height: 40px;
     overflow: hidden;
     outline-width: 2px;
-    padding: 0 16px;
+    padding: 0 12px;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -77,11 +77,11 @@
     font-size: 1rem;
     font-weight: 500;
     font-family: inherit;
-    height: 36px;
-    line-height: 36px;
+    height: 40px;
+    line-height: 40px;
     overflow: hidden;
     outline-width: 2px;
-    padding: 0 20px;
+    padding: 0 24px;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -114,6 +114,26 @@
     padding-bottom: 138px;
     padding-top: 40px;
 }
+.home_hero::before
+{
+content: '';
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+    background-color: #faf9f7;
+}
+.home_hero::after
+{
+    content: '';
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: -2;
+    background-color: #fff;
+}
 .hero
 {
     width: 100%;
@@ -132,4 +152,143 @@
 .hero_mobile_img
 {
     display:none;
+}
+.intent_module 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin-bottom: 42px;
+}
+.intent_module_list
+{
+    width: 100%;
+    list-style: none;
+}
+li{
+    text-align: left;
+}
+.intent_module_button
+{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    min-height: 56px;
+    width: 408px;
+    line-height: 25px;
+    background-color: #fff;
+    padding: 16px 16px;
+    border-radius: 5px;
+    color: rgba(0,0,0,0.9);
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 4px 6px rgba(0,0,0,0.2);
+    transition: box-shadow 83ms, -webkit-box-shadow 83ms;
+    margin-bottom: 16px; 
+    text-decoration: none;
+    color: inherit;  
+}
+.intent_module_button:hover{
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 6px 9px rgba(0,0,0,0.2);
+    transition: box-shadow 83ms, -webkit-box-shadow 83ms;
+}
+.intent_arrow
+{
+   width: 24px;
+   height: 24px;
+   margin-left: 16px;
+   flex-shrink: 0;
+   display: inline-flex;
+    vertical-align: middle;
+   transition: opacity 334ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.home_hero+.home_section
+{
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+.no-min-height
+{
+    min-height: 0;
+}
+.feature_learning
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.feature_learning::after
+{
+    content: '';
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -2;
+    background-color: #faf9f7;
+}
+.learning_cta
+{
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-right: 16px;
+}
+.learning_content
+{
+    margin: auto 0;
+    width: 408px;
+    margin-right: 72px;
+}
+.slide_test
+{
+    overflow: hidden;
+    position: relative;
+    padding-left: 2px;
+    padding-bottom: 6px;
+}
+.trending_courses
+{
+    width: auto;
+}
+.trending_courses:last-child{
+    margin-bottom: 0;
+}
+.slide_list
+{
+    align-items: stretch;
+    display: flex;
+    transition: all 334ms cubic-bezier(0.4, 0, 0.2, 1);
+    list-style: none;
+}
+.trending_course_item
+{
+    margin-right: 32px;
+}
+.related_content_card
+{
+    width: 284px;
+}
+.related_entity_media
+{
+    height: auto;
+    width: auto;
+}
+.related_entity_img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.related_content_info
+{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-top: 8px;
 }

@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { ReactComponent as DesktopSize } from '../Image/home_desktop_size.svg';
 import { ReactComponent as MobileSize } from '../Image/home_mobile_size.svg';
+import { ReactComponent as Arrow } from '../Image/more_arrow.svg';
+import Work from '../Image/working_yourself.jpg';
+import Job from '../Image/searching_job.jpg';
 
 const useStyles = makeStyles((theme) => ({
     hero_headline: {
@@ -14,6 +17,22 @@ const useStyles = makeStyles((theme) => ({
         width: '55%',
         paddingBottom: '48px',
         fontSize: '3.5rem',
+    },
+    learning_header: {
+        fontSize: '3.125rem',
+        lineHeight: '60px',
+        fontWeight: '400',
+        color: 'rgba(0,0,0,0.9)',
+        marginBottom: '24px',
+    },
+    related_content_title: {
+        color: 'rgba(0,0,0,0.9)',
+        fontSize: '1rem',
+        height: 'auto',
+        width: 'auto',
+        overflow: 'hidden',
+        textOverflow: 'initial',
+        whiteSpace: 'initial',
     }
 }));
 
@@ -39,7 +58,52 @@ function Home() {
                         <DesktopSize className="hero_desktop_img" />
                         <MobileSize className="hero_mobile_img" />
                     </div>
-
+                    <div class="intent_module">
+                        <ul class="intent_module_list" style={{ paddingLeft: "0px" }}>
+                            <li>
+                                <Link to="#" className="intent_module_button">
+                                    Search for a job <Arrow className="intent_arrow" /></Link></li>
+                            <li>
+                                <Link to="#" className="intent_module_button">
+                                    Find a person you know <Arrow className="intent_arrow" /></Link></li>
+                            <li>
+                                <Link to="#" className="intent_module_button">
+                                    Learn a new skill <Arrow className="intent_arrow" /></Link></li>
+                        </ul>
+                    </div>
+                </section>
+                <section className="home_section no-min-height">
+                    <div className="feature_learning">
+                        <div className="learning_cta">
+                            <div className="learning_content">
+                                <Typography variant="h4" className={classes.learning_header}>Learn the skills that can help you now</Typography>
+                            </div>
+                        </div>
+                        <secton className="slide_test trending_courses">
+                            <ul className="slide_list">
+                                <li className="trending_course_item">
+                                    <Link to="#" className="related_content_card">
+                                        <div className="related_entity_media">
+                                            <img src={Work} className="related_entity_img" alt="working yourself" />
+                                        </div>
+                                        <div className="related_content_info">
+                                            <Typography variant="h6" className={classes.related_content_title}>Remote Working: Setting Yourself and Your Teams Up for Success</Typography>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li className="trending_course_item">
+                                    <Link to="#" className="related_content_card">
+                                        <div className="related_entity_media">
+                                            <img src={Job} className="related_entity_img" alt="working yourself" />
+                                        </div>
+                                        <div className="related_content_info">
+                                            <Typography variant="h6" className={classes.related_content_title}>Finding a Job during Challenging Economic Times</Typography>
+                                        </div>
+                                    </Link>
+                                </li>
+                            </ul>
+                        </secton>
+                    </div>
                 </section>
             </main>
         </div>
