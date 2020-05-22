@@ -27,12 +27,25 @@ const useStyles = makeStyles((theme) => ({
     },
     related_content_title: {
         color: 'rgba(0,0,0,0.9)',
-        fontSize: '1rem',
+        fontSize: '1.1rem',
         height: 'auto',
         width: 'auto',
         overflow: 'hidden',
         textOverflow: 'initial',
         whiteSpace: 'initial',
+    },
+    job_finder_header: {
+        fontSize: '2.2rem',
+        color: 'rgba(0,0,0,0.9)',
+        lineHeight: '60px',
+        fontWeight: '400',
+    },
+    see_more_list_header: {
+        fontSize: '1.1rem',
+        fontWeight: '500',
+        color: 'rgba(0,0,0,0.6)',
+        marginBottom: '20px',
+        textTransform: 'uppercase',
     }
 }));
 
@@ -103,6 +116,18 @@ function Home() {
                                 </li>
                             </ul>
                         </secton>
+                    </div>
+                </section>
+                <section className="home_section no-min-height">
+                    <div className="search_cta">
+                        <div className="job_finder_cta">
+                            <Typography variant="h4" className={classes.job_finder_header}>Find open jobs and internships</Typography>
+                        </div>
+                        <div className="suggested_search">
+                            <div className="see_more_list">
+                                <Typography variant="body2" className={classes.see_more_list_header}>Suggested search</Typography>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>

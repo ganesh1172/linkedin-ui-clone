@@ -271,6 +271,12 @@ li{
 .related_content_card
 {
     width: 284px;
+    text-decoration: none;
+}
+.related_content_card:hover
+{
+    text-decoration: underline;
+    color: inherit;
 }
 .related_entity_media
 {
@@ -291,4 +297,26 @@ li{
     -webkit-box-direction: normal;
     flex-direction: column;
     margin-top: 8px;
+}
+.search_cta
+{
+    width: 100%;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    background-color: aquamarine;
+}
+.job_finder_cta
+{
+    min-width: 408px;
+    margin-right: 72px;
+    align-self: flex-start;
+}
+.suggested_search
+{
+    width: 100%;
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    align-self: flex-start;
 }
