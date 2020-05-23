@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { ReactComponent as DesktopSize } from '../Image/home_desktop_size.svg';
 import { ReactComponent as MobileSize } from '../Image/home_mobile_size.svg';
 import { ReactComponent as Arrow } from '../Image/more_arrow.svg';
+import { ReactComponent as Down } from '../Image/down_arrow.svg';
 import Work from '../Image/working_yourself.jpg';
 import Job from '../Image/searching_job.jpg';
 
@@ -40,12 +41,20 @@ const useStyles = makeStyles((theme) => ({
         lineHeight: '60px',
         fontWeight: '400',
     },
-    see_more_list_header: {
-        fontSize: '1.1rem',
+    see_less_list_header: {
+        fontSize: '1rem',
         fontWeight: '500',
         color: 'rgba(0,0,0,0.6)',
         marginBottom: '20px',
         textTransform: 'uppercase',
+    },
+    talent_finder_header: {
+        width: '400px',
+        marginRight: '67px',
+        fontSize: '2.5rem',
+        fontWeight: '400',
+        color: '#B24020',
+        lineHeight: '50px',
     }
 }));
 
@@ -124,10 +133,35 @@ function Home() {
                             <Typography variant="h4" className={classes.job_finder_header}>Find open jobs and internships</Typography>
                         </div>
                         <div className="suggested_search">
-                            <div className="see_more_list">
-                                <Typography variant="body2" className={classes.see_more_list_header}>Suggested search</Typography>
+                            <div className="see_less_list">
+                                <Typography variant="body2" className={classes.see_less_list_header}>Suggested search</Typography>
+                                <div className="see_more-list">
+                                    <input type="checkbox" className="see_more_less_state" />
+                                    <ul className="see_more_less_list" style={{ paddingLeft: "0px" }}>
+                                        <li><Link to="" className="pill">Remote Jobs</Link></li>
+                                        <li><Link to="" className="pill">Warehouse Jobs</Link></li>
+                                        <li><Link to="" className="pill">Amazon Jobs</Link></li>
+                                        <li><Link to="" className="pill">Engineering</Link></li>
+                                        <li><Link to="" className="pill">Business Development</Link></li>
+                                        <li><Link to="" className="pill">Finance</Link></li>
+                                        <li><Link to="" className="pill"> Administrative Assistant</Link></li>
+                                        <li><Link to="" className="pill">Retailers Associate</Link></li>
+                                        <li><Link to="" className="pill">Customer Services</Link></li>
+                                        <li><Link to="" className="pill">Operations</Link></li>
+                                    </ul>
+                                    <label className="show_more_less_label" role="button">
+                                        <span className="see_more_less-list_show_more">
+                                            Show more <Down className="arrow_down_icon" /></span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <section className="home_section section_full">
+                    <div className="talent_finder">
+                        <Typography variant="h4" className={classes.talent_finder_header}>Post your job and find the people you need</Typography>
+                        <Link to="#" className="pill pill_transparent">Post a job</Link>
                     </div>
                 </section>
             </main>

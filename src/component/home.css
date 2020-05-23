@@ -305,7 +305,6 @@ li{
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-direction: row;
-    background-color: aquamarine;
 }
 .job_finder_cta
 {
@@ -319,4 +318,106 @@ li{
     -webkit-box-flex: 2;
     flex-grow: 2;
     align-self: flex-start;
+}
+.see_more_less_state
+{
+    display: none;
+}
+.see_more_less_list
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.pill
+{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: left;
+    min-height: 56px;
+    height: auto;
+    width: auto;
+    float: left;
+    background-color: rgba(0,0,0,0.08);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 28px;
+    padding: 8px 20px;
+    margin: 0px 6px 12px 0px;
+    text-decoration: none;
+}
+.pill:hover
+{
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: none;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.show_more_less_label
+{
+    font-weight: 600;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+}
+.see_more_less-list_show_more
+{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+}
+.arrow_down_icon
+{
+    width: 15px;
+    height: 15px;
+    margin-left: 4px;
+    transform: rotate(180deg);
+}
+.section_full
+{
+    min-height: 0;
+    padding: 0;
+}
+.talent_finder
+{
+    width: 100%;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 70px 0;
+}
+.talent_finder_header
+{
+    width: calc(408px + 5px);
+    margin-right: calc(72px - 5px);
+}
+.talent_finder.pill{
+    flex-shrink: 1;
+}
+.talent_finder::after
+{
+    content: '';
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -2;
+    background-color: #c58224
+}
+.pill_transparent
+{
+    border: solid 1px rgba(0,0,0,0.6);
+    background: transparent;
 }
