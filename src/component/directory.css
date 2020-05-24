@@ -1,0 +1,51 @@
+*{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;;
+}
+.directory
+{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 24px 0 22px 0;
+}
+.directory::after
+{
+    content: '';
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: -2;
+    background-color: #faf9f7;
+}
+.directory_logo
+{
+    display: inline-flex;
+    align-self: flex-start;
+    height: 21px;
+    width: 84px;
+    flex-shrink: 0;
+    opacity: 1;
+}
+.directory_lists
+{
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding-left: 16px;
+}
+.directory_column
+{
+    width: 100%;
+    max-width: 192px;
+    margin-right: 24px;
+}
+ul{
+    list-style: none;
+}
+li{
+    text-align: left;
+}
+
