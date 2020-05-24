@@ -1,0 +1,44 @@
+*{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+.pill_button
+{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: rgba(0,0,0,0.6);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: left;
+    min-height: 56px;
+    height: auto;
+    width: auto;
+    float: left;
+    background-color: rgba(0,0,0,0.08);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 28px;
+    padding: 8px 20px;
+    margin: 0px 6px 12px 0px;
+    text-decoration: none;
+}
+.pill_button:hover
+{
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: none;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.pill_blue
+ {
+    background-color: #2977c9;
+    color: #fff;
+    font-weight: normal;
+ }
+ .pill.pill_blue:hover{
+    background-color: #006097;
+    color: #fff;
+    font-weight: normal;
+ }
