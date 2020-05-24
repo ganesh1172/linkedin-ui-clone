@@ -14,6 +14,10 @@ import { ReactComponent as Learning } from '../Image/learning.svg';
 import Noel from '../Image/noel_debow.jpg';
 import Aaron from '../Image/aaron_pagan.jpg';
 import Curtis from '../Image/curtis_pagan.jpg';
+import Brand from '../Image/brand_discovery_image.jpg';
+import Directory from './directory';
+import Footer from './footer';
+import Opening from './opening';
 
 const useStyles = makeStyles((theme) => ({
     hero_headline: {
@@ -80,7 +84,43 @@ const useStyles = makeStyles((theme) => ({
     },
     learning_cta_header: {
         marginBottom: '40px',
-    }
+    },
+    join_cta_header: {
+        fontSize: '3.6rem',
+        fontFamily: 'sans-serif',
+        color: '#2977c9',
+        fontWeight: '200',
+        lineHeight: '70px',
+        margin: '20px 0 40px 0',
+    },
+    marketing_header: {
+        fontSize: '2.5rem',
+        margin: '0 0 16px 48px',
+        color: '#B24020',
+        lineHeight: '50px',
+        fontWeight: '400',
+    },
+    marketing_subtitle: {
+        fontSize: '2.4rem',
+        color: 'rgba(0,0,0,0.9)',
+        fontWeight: '300',
+        lineHeight: '50px',
+        marginLeft: '48px',
+    },
+    discovery_header: {
+        fontSize: '2.5rem',
+        marginBottom: '8px',
+        color: '#B24020',
+        lineHeight: '50px',
+        fontWeight: '400',
+    },
+    discovery_subtitle: {
+        fontSize: '2.4rem',
+        color: 'rgba(0,0,0,0.9)',
+        fontWeight: '300',
+        lineHeight: '50px',
+        marginBottom: '40px',
+    },
 }));
 
 const ulStyle = {
@@ -106,23 +146,13 @@ function Home() {
             <main className="home_main">
                 <section className="home_section home_hero">
                     <div className="hero">
-                        <Typography variant="h3" className={classes.hero_headline}>Welcome to your professional community</Typography>
+                        <Typography variant="h3" className={classes.hero_headline}>Open job. People<br />hiring.</Typography>
                         <DesktopSize className="hero_desktop_img" />
                         <MobileSize className="hero_mobile_img" />
                     </div>
-                    <div className="intent_module">
-                        <ul className="intent_module_list" style={{ paddingLeft: "0px" }}>
-                            <li>
-                                <Link to="#" className="intent_module_button">
-                                    Search for a job <Arrow className="intent_arrow" /></Link></li>
-                            <li>
-                                <Link to="#" className="intent_module_button">
-                                    Find a person you know <Arrow className="intent_arrow" /></Link></li>
-                            <li>
-                                <Link to="#" className="intent_module_button">
-                                    Learn a new skill <Arrow className="intent_arrow" /></Link></li>
-                        </ul>
-                    </div>
+                    <section className="search">
+                        <Opening />
+                    </section>
                 </section>
                 <section className="home_section no-min-height">
                     <div className="search_cta">
@@ -135,16 +165,16 @@ function Home() {
                                 <div className="see_more-list">
                                     <input type="checkbox" className="see_more_less_state" />
                                     <ul className="see_more_less_list" style={{ paddingLeft: "0px" }}>
-                                        <li><Link to="" className="pill">Remote Jobs</Link></li>
-                                        <li><Link to="" className="pill">Warehouse Jobs</Link></li>
-                                        <li><Link to="" className="pill">Amazon Jobs</Link></li>
-                                        <li><Link to="" className="pill">Engineering</Link></li>
-                                        <li><Link to="" className="pill">Business Development</Link></li>
-                                        <li><Link to="" className="pill">Finance</Link></li>
-                                        <li><Link to="" className="pill"> Administrative Assistant</Link></li>
-                                        <li><Link to="" className="pill">Retailers Associate</Link></li>
-                                        <li><Link to="" className="pill">Customer Services</Link></li>
-                                        <li><Link to="" className="pill">Operations</Link></li>
+                                        <li><Link to="" className="pill">Executive Assistant, India</Link></li>
+                                        <li><Link to="" className="pill">Assistant, India</Link></li>
+                                        <li><Link to="" className="pill">Office Assistant, India</Link></li>
+                                        <li><Link to="" className="pill">Company Secretary, India</Link></li>
+                                        <li><Link to="" className="pill">Caller, India</Link></li>
+                                        <li><Link to="" className="pill">Administrative Specialist, India</Link></li>
+                                        <li><Link to="" className="pill">Personal Assistant, India</Link></li>
+                                        <li><Link to="" className="pill">Reviewer, India</Link></li>
+                                        <li><Link to="" className="pill">Receptionist, India</Link></li>
+                                        <li><Link to="" className="pill">Executive Assistant, Mumbai</Link></li>
                                     </ul>
                                     <label className="show_more_less_label" role="button">
                                         <span className="see_more_less-list_show_more">
@@ -227,13 +257,47 @@ function Home() {
                             <div className="learning_cta_content">
                                 <Typography variant="h3" className={classes.learning_cta_header}>Learn the skills that can help you now</Typography>
                                 <div className="dropdown learning_cta">
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
+                <section className="home_section">
+                    <div className="brand_discovery">
+                        <div className="brand_discovery_cta">
+                            <Typography variant="h4" className={classes.discovery_header}>Who is LinkedIn for?</Typography>
+                            <Typography variant="subtitle1" className={classes.discovery_subtitle}>Anyone looking to navigate their professional life</Typography>
+                            <ul style={{ paddingLeft: "0px" }}>
+                                <li><Link to="#" className="brand_discovery_button">Find a co-worker or classmate <Arrow className="brand_arrow" /></Link></li>
+                                <li><Link to="#" className="brand_discovery_button">Find a new job <Arrow className="brand_arrow" /></Link></li>
+                                <li><Link to="#" className="brand_discovery_button">Find a course or training <Arrow className="brand_arrow" /></Link></li>
+                            </ul>
+                        </div>
+                        <img src={Brand} className="brand_discovery_img" alt="Who is LinkedIn for?" />
+                    </div>
+                </section>
+                <section className="home_section">
+                    <div className="marketing">
+                        <div className="marketing_media">
+                            <iframe src="https://www.youtube.com/embed/oHpdTckid4Y?rel=0" className="marketing_iframe" title="A recruiter's guide to job search | Full Story" allowfullscreen></iframe>
+                        </div>
+                        <div className="marketing_copy">
+                            <Typography variant="h4" className={classes.marketing_header}>3 ways to find your job</Typography>
+                            <Typography variant="subtitle1" className={classes.marketing_subtitle}>Check out these steps to help you get started</Typography>
+                        </div>
+                    </div>
+                </section>
+                <section className="home_section">
+                    <div className="join_cta">
+                        <Typography variant="h3" className={classes.join_cta_header}>Join your colleagues, classmates, and friends on LinkedIn.</Typography>
+                        <Link className="pill pill_blue">Get Started</Link>
+                    </div>
+                </section>
+                <section className="home_section section_full">
+                    <Directory />
+                </section>
             </main>
+            <Footer />
         </div>
     )
 

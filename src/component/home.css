@@ -153,23 +153,10 @@ content: '';
 {
     display:none;
 }
-.intent_module 
-{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 100%;
-    margin-bottom: 42px;
-}
-.intent_module_list
-{
-    width: 100%;
-    list-style: none;
-}
 li{
     text-align: left;
 }
-.intent_module_button
+.brand_discovery_button
 {
     font-size: 1.2rem;
     line-height: 1.4;
@@ -190,11 +177,11 @@ li{
     text-decoration: none;
     color: inherit;  
 }
-.intent_module_button:hover{
+.brand_discovery_button:hover{
     box-shadow: 0 0 0 1px rgba(0,0,0,0.15), 0 6px 9px rgba(0,0,0,0.2);
     transition: box-shadow 83ms, -webkit-box-shadow 83ms;
 }
-.intent_arrow
+.brand_arrow
 {
    width: 24px;
    height: 24px;
@@ -473,4 +460,100 @@ li{
     -webkit-box-align: center;
     align-items: center;
     position: relative;
+ }
+ .brand_discovery
+ {  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 720px;
+    width: 100%;
+ }
+ .brand_discovery_cta
+ {
+    min-width: 50%;
+    width: 50%;
+    margin: auto 0;
+    padding-right: 50px;
+ }
+ .brand_discovery_img
+ {
+    height: 840px;
+    align-self: center;
+    margin-left: 96px;
+ }
+ .brand_discovery::after
+ {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    background-color: #faf9f7;
+ }
+ .marketing
+ {
+    display: flex;
+    height: 720px;
+    min-width: 60%;
+ }
+ .marketing_media
+ {
+    min-width: 500px;
+    width: 100%;
+    margin: 170px 0 172px 0;
+    border-radius: 5px;
+    overflow: hidden;
+ }
+ .marketing_iframe
+ {
+    width: 100%;
+    height: 100%;
+    border: none;
+ }
+ .marketing_copy
+ {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .marketing::after
+ {
+    content: '';
+    width: 100vw;
+    height: 720px;
+    left: 30%;
+    position: absolute;
+    z-index: -1;
+    background-color: #F4FAFF;
+ }
+ .join_cta
+ {
+    width: 100%;
+    align-self: flex-start;
+ }
+ .pill_blue
+ {
+    background-color: #2977c9;
+    color: #fff;
+    font-weight: normal;
+ }
+ .pill.pill_blue:hover{
+    background-color: #006097;
+    color: #fff;
+    font-weight: normal;
+ }
+ .join_cta::after
+ {
+    content: '';
+    width: 100vw;
+    height: 840px;
+    position: absolute;
+    z-index: -1;
+    background: url(/sc/h/2vt8plqbv2l2pi6kxm89bqs59) repeat-x bottom/auto 100%;
+    bottom: 0;
+ }
+ .section_full
+ {
+    min-height: 0;
+    padding: 0;
  }
