@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 
 function TabPanel(props) {
     const { children, value, index, ...other } = props;
-
     return (
         <div
             role="tabpanel"
@@ -39,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-function Opening() {
+export default function Opening() {
     const classes = useStyles();
     const [value, setValue] = useState(0);
 
@@ -83,5 +82,3 @@ function Opening() {
         </div>
     );
 }
-
-export default Opening;
