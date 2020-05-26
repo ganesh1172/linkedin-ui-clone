@@ -1,0 +1,80 @@
+*{
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Fira Sans",Ubuntu,Oxygen,"Oxygen Sans",Cantarell,"Droid Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Emoji","Segoe UI Symbol","Lucida Grande",Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+.slide_list
+{
+    overflow: hidden;
+    position: relative;
+    padding-left: 2px;
+    padding-bottom: 6px;
+}
+.slide_list_header
+{
+    width: 1126px;
+    height: 33px;
+    display: flex;
+    position: sticky;
+    left: 0;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.testinomials.slide_list_header_nav
+{
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    padding: 0;
+}
+.slide_list_header_nav
+{
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.slide_list_nav_wrap
+{
+    display: flex;
+    padding: 0 8px;
+}
+.slide_list_prev_button
+{
+    transform: rotate(180deg);
+    cursor:not-allowed;
+}
+.slide_list_item
+{   
+    align-items: stretch;
+    display: flex;
+    transition: all 334ms cubic-bezier(0.4, 0, 0.2, 1);
+    list-style: none;
+}
+.testimonials_card
+{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 96px;
+}
+.testinomials_content
+{
+    margin-right: 64px;
+    width: 563px;
+}
+.testimonial_image
+{
+    width: 450px;
+    border-radius: 50%;
+}
+.testimonials_actor
+{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    margin-top: 24px;
+}
