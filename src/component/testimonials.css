@@ -78,3 +78,15 @@
     flex-direction: column;
     margin-top: 24px;
 }
+.slider
+{
+   height: 100vh; 
+}
+.slider a.previousButton {
+    left: 10px !important;
+    top: 17px;
+}
+.slider a.nextButton{
+    right: 83%;
+    top: 17px;
+}

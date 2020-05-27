@@ -3,8 +3,8 @@ import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
 import './testimonials.css';
 import { makeStyles } from '@material-ui/core/styles';
-import { ReactComponent as Arrow } from '../Image/more_arrow.svg';
-import { Typography, Button } from '@material-ui/core';
+// import { ReactComponent as Arrow } from '../Image/more_arrow.svg';
+import { Typography } from '@material-ui/core';
 import content from './content';
 
 const useStyles = makeStyles((theme) => ({
@@ -37,7 +37,7 @@ function Testimonial() {
     return (
         <section className="slide_list">
             <header className="slide_list_header">
-                <div className="slide_list_header_nav">
+                {/* <div className="slide_list_header_nav">
                     <div className="slide_list_nav_wrap slide_list_prev">
                         <Button className={classes.slide_list_nav_button} disabled>
                             <Arrow className="slide_list_prev_button" />Previous</Button>
@@ -46,23 +46,25 @@ function Testimonial() {
                         <Button className={classes.slide_list_nav_button}>
                             Next<Arrow /></Button>
                     </div>
-                </div>
+                </div> */}
             </header>
             <ul className="slide_list_item" style={ulStyle}>
-                <Slider>
+                <Slider className="slider" >
                     {content.map((item, index) => (
-                        <li className="testimonials_card">
-                            <div className="testinomials_content" key={index}>
-                                <Typography variant="h5" className={classes.testinomials_header}>{item.header}
-                                </Typography>
-                                <Typography variant="body1" className={classes.testinomials_quote}>{item.description}</Typography>
-                                <div className="testimonials_actor">
-                                    <span>{item.user}</span>
-                                    <span>{item.userProfile}</span>
+                        <div key={index} >
+                            <li className="testimonials_card">
+                                <div className="testinomials_content">
+                                    <Typography variant="h5" className={classes.testinomials_header}>{item.header}
+                                    </Typography>
+                                    <Typography variant="body1" className={classes.testinomials_quote}>{item.description}</Typography>
+                                    <div className="testimonials_actor">
+                                        <span>{item.user}</span>
+                                        <span>{item.userProfile}</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <img src={item.image} className="testimonial_image" alt="Noel Debow Testimonial. She is a Visual Merchandiser" />
-                        </li>
+                                <img src={item.image} className="testimonial_image" alt="Noel Debow Testimonial. She is a Visual Merchandiser" />
+                            </li>
+                        </div>
                     ))}
                 </Slider>
             </ul>
