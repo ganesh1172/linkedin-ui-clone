@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './home.css';
 import './forgotPassword.css';
 import { ReactComponent as Icon } from '../Image/home_logo.svg';
@@ -108,7 +108,19 @@ const useStyles = makeStyles((theme) => ({
 
 
 function Home() {
+
     const classes = useStyles();
+    const [hidden, setShow] = useState(true);
+
+    // const handleShow = () => {
+    //     setShow({ isActive: true });
+    //     console.log(isActive);
+    // }
+
+    // const handleHide = () => {
+    //     setShow({ isActive: false });
+    //     console.log(isActive);
+    // }
     return (
         <div id="app_container">
             <header>
@@ -147,22 +159,24 @@ function Home() {
                                         <li><Link to="" className="pill">Executive Assistant, India</Link></li>
                                         <li><Link to="" className="pill">Assistant, India</Link></li>
                                         <li><Link to="" className="pill">Office Assistant, India</Link></li>
-                                        <li><Link to="" className="pill">Company Secretary, India</Link></li>
-                                        <li><Link to="" className="pill">Caller, India</Link></li>
-                                        <li><Link to="" className="pill">Administrative Specialist, India</Link></li>
-                                        <li><Link to="" className="pill">Personal Assistant, India</Link></li>
-                                        <li><Link to="" className="pill">Reviewer, India</Link></li>
-                                        <li><Link to="" className="pill">Receptionist, India</Link></li>
-                                        <li><Link to="" className="pill">Executive Assistant, Mumbai</Link></li>
+                                        {hidden ? null : <>
+                                            <li><Link to="" className="pill">Company Secretary, India</Link></li>
+                                            <li><Link to="" className="pill">Caller, India</Link></li>
+                                            <li><Link to="" className="pill">Administrative Specialist, India</Link></li>
+                                            <li><Link to="" className="pill">Personal Assistant, India</Link></li>
+                                            <li><Link to="" className="pill">Reviewer, India</Link></li>
+                                            <li><Link to="" className="pill">Receptionist, India</Link></li>
+                                            <li><Link to="" className="pill">Executive Assistant, Mumbai</Link></li> </>}
                                     </ul>
-                                    <label className="show_more_less_label" role="button">
-                                        <span className="show_more">
-                                            Show more <Down className="arrow_down_icon" /></span>
-                                    </label>
-                                    <label className="show_more_less_label" role="button">
-                                        <span className="show_less">
-                                            Show less <Down className="arrow_up_icon" /></span>
-                                    </label>
+                                    {hidden ? <>
+                                        <label className="show_more_less_label" role="button" onClick={() => setShow(false)}>
+                                            <span className="show_more">
+                                                Show more <Down className="arrow_down_icon" /></span>
+                                        </label> </> : <>
+                                            <label className="show_more_less_label" role="button" onClick={() => setShow(true)}>
+                                                <span className="show_more">
+                                                    Show less <Down className="arrow_up_icon" /></span>
+                                            </label> </>}
                                 </div>
                             </div>
                         </div>
@@ -183,7 +197,7 @@ function Home() {
                             <Meeting className="people_cta_img" />
                             <div className="people_cta_content">
                                 <Typography variant="h3" className={classes.people_cta_header}>Connect with people who can help</Typography>
-                                <Link className="pill pill_transparent">Find people you know</Link>
+                                <Link to="#" className="pill pill_transparent">Find people you know</Link>
                             </div>
                         </div>
                         <div className="learning_cta">
@@ -213,7 +227,7 @@ function Home() {
                 <section className="home_section">
                     <div className="marketing">
                         <div className="marketing_media">
-                            <iframe src="https://www.youtube.com/embed/oHpdTckid4Y?rel=0" className="marketing_iframe" title="A recruiter's guide to job search | Full Story" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/oHpdTckid4Y?rel=0" className="marketing_iframe" title="A recruiter's guide to job search | Full Story" allowfullScreen></iframe>
                         </div>
                         <div className="marketing_copy">
                             <Typography variant="h4" className={classes.marketing_header}>3 ways to find your job</Typography>
@@ -224,7 +238,7 @@ function Home() {
                 <section className="home_section">
                     <div className="join_cta">
                         <Typography variant="h3" className={classes.join_cta_header}>Join your colleagues, classmates, and friends on LinkedIn.</Typography>
-                        <Link className="pill pill_blue">Get Started</Link>
+                        <Link to="#" className="pill pill_blue">Get Started</Link>
                         <Started className="join_img" />
                     </div>
                 </section>
