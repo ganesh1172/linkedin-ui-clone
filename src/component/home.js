@@ -112,15 +112,6 @@ function Home() {
     const classes = useStyles();
     const [hidden, setShow] = useState(true);
 
-    // const handleShow = () => {
-    //     setShow({ isActive: true });
-    //     console.log(isActive);
-    // }
-
-    // const handleHide = () => {
-    //     setShow({ isActive: false });
-    //     console.log(isActive);
-    // }
     return (
         <div id="app_container">
             <header>
@@ -142,6 +133,11 @@ function Home() {
                         <MobileSize className="hero_mobile_img" />
                     </div>
                     <section className="search">
+                        <ul style={{ paddingLeft: "0px" }}>
+                            <li><Link to="#" className="brand_discovery_button">Search for a job <Arrow className="brand_arrow" /></Link></li>
+                            <li><Link to="#" className="brand_discovery_button">Find a person you know <Arrow className="brand_arrow" /></Link></li>
+                            <li><Link to="#" className="brand_discovery_button">learn a new skill <Arrow className="brand_arrow" /></Link></li>
+                        </ul>
                         {/* <Opening /> */}
                     </section>
                 </section>
@@ -227,7 +223,7 @@ function Home() {
                 <section className="home_section">
                     <div className="marketing">
                         <div className="marketing_media">
-                            <iframe src="https://www.youtube.com/embed/oHpdTckid4Y?rel=0" className="marketing_iframe" title="A recruiter's guide to job search | Full Story" allowfullScreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/oHpdTckid4Y?rel=0" className="marketing_iframe" title="A recruiter's guide to job search | Full Story" allowFullScreen></iframe>
                         </div>
                         <div className="marketing_copy">
                             <Typography variant="h4" className={classes.marketing_header}>3 ways to find your job</Typography>
