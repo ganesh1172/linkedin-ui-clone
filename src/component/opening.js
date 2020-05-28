@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function Opening() {
+function Opening() {
     const classes = useStyles();
     const [value, setValue] = useState(0);
 
@@ -82,3 +82,5 @@ export default function Opening() {
         </div>
     );
 }
+
+export default Opening;
