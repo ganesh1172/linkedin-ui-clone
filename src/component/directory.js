@@ -35,46 +35,46 @@ function Directory() {
                 <div className="directory_column">
                     <Typography variant="body1" className={classes.directory_list_heading}>General</Typography>
                     <ul className="directory_list" style={ulStyle}>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Sign Up</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Help Center</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>About</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Press</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Blog</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Careers</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Developers</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Sign Up</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Help Center</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>About</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Press</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Blog</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Careers</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Developers</Link></li>
                     </ul>
                 </div>
                 <div className="directory_column">
                     <Typography variant="body1" className={classes.directory_list_heading}>Browse LinkedIn</Typography>
                     <ul className="directory_list" style={ulStyle}>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Learning</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Jobs</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Salary</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Mobile</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>ProFinder</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Learning</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Jobs</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Salary</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Mobile</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>ProFinder</Link></li>
                     </ul>
                 </div>
                 <div className="directory_column">
                     <Typography variant="body1" className={classes.directory_list_heading}>Business Solutions</Typography>
                     <ul className="directory_list" style={ulStyle}>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Talent</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Marketing</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Sales  </Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Learning</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Talent</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Marketing</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Sales  </Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Learning</Link></li>
                     </ul>
                 </div>
                 <div className="directory_column">
                     <Typography variant="body1" className={classes.directory_list_heading}>Directories</Typography>
                     <ul className="directory_list" style={ulStyle}>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Members</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Jobs</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Companies</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Salaries</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Universities</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Featured</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Learning</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Posts</Link></li>
-                        <li className="directory_list_item"><Link className={classes.directory_link}>Jobs Hub</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Members</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Jobs</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Companies</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Salaries</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Universities</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Featured</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Learning</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Posts</Link></li>
+                        <li className="directory_list_item"><Link to="#" className={classes.directory_link}>Jobs Hub</Link></li>
                     </ul>
                 </div>
             </div>
