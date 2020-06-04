@@ -2,7 +2,7 @@
 	<img
 		width="200"
 		alt="LinkedIn logo"
-		src="src/component/assestsheader_logo.png">
+		src="src/component/assests/header_logo.png">
 </h1>                                                              
 
 <h3 align="center">World's largest professional network website UI clone.</h3>
@@ -11,7 +11,7 @@
 	<img
      width= "800px"
 		alt="Collab Image"
-		src="src/component/assestslinkedIn_SignIn.jpg">
+		src="src/component/assests/linkedIn_SignIn.jpg">
 </h1>  
 <h2>Introduction</h2>
 <p>Basically, I build these project just practise. Already i build 4-5 projects. But <strong>LinkedIn Login page</strong> is my first project build by own without any youtube help.</p>
