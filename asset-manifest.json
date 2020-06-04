@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/linkedin-ui-clone/static/css/main.6955a97e.chunk.css",
+    "main.js": "/linkedin-ui-clone/static/js/main.14a7c7ed.chunk.js",
+    "main.js.map": "/linkedin-ui-clone/static/js/main.14a7c7ed.chunk.js.map",
+    "runtime-main.js": "/linkedin-ui-clone/static/js/runtime-main.e748f43c.js",
+    "runtime-main.js.map": "/linkedin-ui-clone/static/js/runtime-main.e748f43c.js.map",
+    "static/css/2.b0d70484.chunk.css": "/linkedin-ui-clone/static/css/2.b0d70484.chunk.css",
+    "static/js/2.5aff94d4.chunk.js": "/linkedin-ui-clone/static/js/2.5aff94d4.chunk.js",
+    "static/js/2.5aff94d4.chunk.js.map": "/linkedin-ui-clone/static/js/2.5aff94d4.chunk.js.map",
+    "index.html": "/linkedin-ui-clone/index.html",
+    "precache-manifest.43ecd5c5be9b85d7cd7d098e61273790.js": "/linkedin-ui-clone/precache-manifest.43ecd5c5be9b85d7cd7d098e61273790.js",
+    "service-worker.js": "/linkedin-ui-clone/service-worker.js",
+    "static/css/2.b0d70484.chunk.css.map": "/linkedin-ui-clone/static/css/2.b0d70484.chunk.css.map",
+    "static/css/main.6955a97e.chunk.css.map": "/linkedin-ui-clone/static/css/main.6955a97e.chunk.css.map",
+    "static/js/2.5aff94d4.chunk.js.LICENSE.txt": "/linkedin-ui-clone/static/js/2.5aff94d4.chunk.js.LICENSE.txt",
+    "static/media/aaron_pagan.jpg": "/linkedin-ui-clone/static/media/aaron_pagan.09b831bb.jpg",
+    "static/media/brand_discovery_image.jpg": "/linkedin-ui-clone/static/media/brand_discovery_image.f435a83e.jpg",
+    "static/media/curtis_pagan.jpg": "/linkedin-ui-clone/static/media/curtis_pagan.40928c2e.jpg",
+    "static/media/directory_logo.d727c5e5.svg": "/linkedin-ui-clone/static/media/directory_logo.d727c5e5.svg",
+    "static/media/down_arrow.5e75383d.svg": "/linkedin-ui-clone/static/media/down_arrow.5e75383d.svg",
+    "static/media/footer_logo.png": "/linkedin-ui-clone/static/media/footer_logo.223cbfd6.png",
+    "static/media/get_started.30b56ef5.svg": "/linkedin-ui-clone/static/media/get_started.30b56ef5.svg",
+    "static/media/home_desktop_size.64fb49de.svg": "/linkedin-ui-clone/static/media/home_desktop_size.64fb49de.svg",
+    "static/media/home_logo.c1cb0073.svg": "/linkedin-ui-clone/static/media/home_logo.c1cb0073.svg",
+    "static/media/home_mobile_size.37ea6680.svg": "/linkedin-ui-clone/static/media/home_mobile_size.37ea6680.svg",
+    "static/media/join_logo.png": "/linkedin-ui-clone/static/media/join_logo.9139dbc5.png",
+    "static/media/learning.e52d1451.svg": "/linkedin-ui-clone/static/media/learning.e52d1451.svg",
+    "static/media/meeting.ba7aeda7.svg": "/linkedin-ui-clone/static/media/meeting.ba7aeda7.svg",
+    "static/media/more_arrow.afa002ea.svg": "/linkedin-ui-clone/static/media/more_arrow.afa002ea.svg",
+    "static/media/noel_debow.jpg": "/linkedin-ui-clone/static/media/noel_debow.e4b935ed.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e748f43c.js",
+    "static/css/2.b0d70484.chunk.css",
+    "static/js/2.5aff94d4.chunk.js",
+    "static/css/main.6955a97e.chunk.css",
+    "static/js/main.14a7c7ed.chunk.js"
+  ]
+}
