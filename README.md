@@ -29,7 +29,7 @@ To clone and run this application, From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Ganesh1172/linkedin-ui-clone.git
+$ git clone https://github.com/ganesh1172/linkedin-ui-clone.git
 
 # install npm packages
 $ npm install
