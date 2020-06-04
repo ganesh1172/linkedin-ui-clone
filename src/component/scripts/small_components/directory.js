@@ -1,9 +1,9 @@
 import React from 'react';
-import './directory.css';
 import { Link } from 'react-router-dom';
-import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import { ReactComponent as Dlogo } from '../Image/directory_logo.svg';
+import { Typography } from '@material-ui/core';
+import '../../styles/directory.css';
+import { ReactComponent as Dlogo } from '../../assests/directory_logo.svg';
 
 const useStyles = makeStyles((theme) => ({
     directory_list_heading: {

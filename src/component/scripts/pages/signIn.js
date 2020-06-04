@@ -1,16 +1,16 @@
 import React from 'react';
 import { useState } from 'react';
-import { Container, Typography, TextField, Button, Checkbox, label } from '@material-ui/core';
-import './signIn.css';
-import 'typeface-roboto';
-import Footer from '../component/footer';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import { Container, Typography, TextField, Button, Checkbox, label } from '@material-ui/core';
 import useForm from "../validation/useForm";
 import validate from '../validation/LoginFormValidationRules';
-import main_logo from '../Image/header_logo.png';
+import Footer from '../small_components/footer';
+import '../../styles/signIn.css';
+import main_logo from '../../assests/header_logo.png';
 // import ForgotPassword from './component/forgotPassword';
 // import JoinNow from './component/joinNow';
-import { Link } from 'react-router-dom';
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -88,7 +88,8 @@ function SignIn() {
             <header className="head"></header>
             <div className="app_content">
                 <Container max-width="sm">
-                    <img src={main_logo} alt="logo" className="main_logo" />
+                    <Link to="/">
+                        <img src={main_logo} alt="logo" className="main_logo" /></Link>
                     <Typography variant="h5" className={classes.title}>Welcome Back!</Typography>
                     <Typography variant="body1" color="textSecondary" className={classes.title2}>
                         Don't miss your next opportunity. Sign in to stay updated on your professional world.
@@ -99,7 +100,7 @@ function SignIn() {
                             <p className="help">{errors.email}</p>
                         )}
                         <br />
-                        <TextField variant="outlined" type="password" name="password" label="Password" className={classes.text_input} onChange={handleChange} value={values.password || ''} required />
+                        <TextField variant="outlined" type="password" name="password" placeholder="Password" className={classes.text_input} onChange={handleChange} value={values.password || ''} required />
                         {errors.password && (
                             <p className="help">{errors.password}</p>
                         )}

@@ -1,11 +1,11 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-import './testimonials.css';
-import { makeStyles } from '@material-ui/core/styles';
-// import { ReactComponent as Arrow } from '../Image/more_arrow.svg';
-import { Typography } from '@material-ui/core';
 import content from './content';
+import '../../styles/testimonials.css';
+// import { ReactComponent as Arrow } from '../assests/more_arrow.svg';
 
 const useStyles = makeStyles((theme) => ({
     slide_list_nav_button: {
@@ -62,7 +62,7 @@ function Testimonial() {
                                         <span>{item.userProfile}</span>
                                     </div>
                                 </div>
-                                <img src={item.image} className="testimonial_image" alt="Noel Debow Testimonial. She is a Visual Merchandiser" />
+                                <img src={item.assests} className="testimonial_assests" alt="Noel Debow Testimonial. She is a Visual Merchandiser" />
                             </li>
                         </div>
                     ))}

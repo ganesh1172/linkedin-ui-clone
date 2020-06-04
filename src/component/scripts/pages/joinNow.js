@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from './footer';
-import './joinNow.css';
-import join from '../Image/join_logo.png';
-import { Typography, TextField, Button } from '@material-ui/core'
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import { Typography, TextField, Button } from '@material-ui/core'
 import useForm from "../validation/useForm";
 import validate from '../validation/LoginFormValidationRules';
-import { Link } from 'react-router-dom';
+import Footer from '../small_components/footer';
+import '../../styles/joinNow.css';
+import join from '../../assests/join_logo.png';
 
 const useStyles = makeStyles((theme) => ({
     main_subtitle: {
@@ -78,7 +78,8 @@ function JoinNow() {
                 <form className="form_join" onSubmit={handleSubmit} noValidate>
                     <header className="header_join">
                         <div className="logo_container">
-                            <img src={join} alt="logo" className="join_logo" />
+                            <Link to="/">
+                                <img src={join} alt="logo" className="join_logo" /></Link>
                         </div>
                         <Typography variant="h4" className={classes.main_subtitle}>Make the most of your professional life</Typography>
                     </header>

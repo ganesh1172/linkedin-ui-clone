@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Home from './component/home';
-import SignIn from './component/signIn';
-import ForgotPassword from './component/forgotPassword';
-import JoinNow from './component/joinNow';
+import Home from './component/scripts/pages/home';
+import SignIn from './component/scripts/pages/signIn';
+import ForgotPassword from './component/scripts/pages/forgotPassword';
+import JoinNow from './component/scripts/pages/joinNow';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
