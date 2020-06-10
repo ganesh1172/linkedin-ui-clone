@@ -119,8 +119,9 @@ function Home() {
                     <div className="home_container">
                         <Icon className="home_logo"></Icon>
                         <nav className="home_content">
-                            <Link to="/join_now" className="home_joinnow">Join now</Link>
+                            {/* <Link to="/join_now" className="home_joinnow">Join now</Link> */}
                             <Link to="/sign_in" className="home_signin">Sign in</Link>
+                            <Link to="/join_now" className="home_joinnow">Sign up</Link>
                         </nav>
                     </div>
                 </div>
