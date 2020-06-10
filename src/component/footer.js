@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, Typography } from '@material-ui/core';
-import '../../../App.css';
-import logo from '../../assests/footer_logo.png';
+import '../App.css';
+import 'typeface-roboto';
+import logo from '../Image/footer_logo.png';
 
 function Footer() {
     return (

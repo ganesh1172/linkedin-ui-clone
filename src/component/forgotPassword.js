@@ -1,12 +1,12 @@
 import React from 'react';
+import Footer from './footer';
+import './forgotPassword.css';
+import forgot_img from '../Image/header_logo.png';
 import { Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
 import { Typography, TextField, Button } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import useForm from "../validation/useForm";
 import validate from '../validation/LoginFormValidationRules';
-import Footer from '../small_components/footer';
-import '../../styles/forgotPassword.css';
-import forgot_img from '../../assests/header_logo.png';
 
 const useStyles = makeStyles((theme) => ({
     content_header: {
@@ -84,8 +84,7 @@ function ForgotPassword() {
             <header>
                 <div className="nav_head">
                     <div className="nav_container">
-                        <Link to="/">
-                            <img src={forgot_img} alt="logo" className="nav_logo" /></Link>
+                        <img src={forgot_img} alt="logo" className="nav_logo" />
                         <nav className="nav_content">
                             <Link to="/sign_in" className="nav_signin">Sign in</Link>
                             <Link to="/join_now" className="nav_joinnow">Join now</Link>

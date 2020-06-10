@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
-import '../../styles/home.css';
-import '../../styles/forgotPassword.css';
-import { ReactComponent as Icon } from '../../assests/home_logo.svg';
+import './home.css';
+import './forgotPassword.css';
+import { ReactComponent as Icon } from '../Image/home_logo.svg';
 import { Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import { ReactComponent as DesktopSize } from '../../assests/home_desktop_size.svg';
-import { ReactComponent as MobileSize } from '../../assests/home_mobile_size.svg';
-import { ReactComponent as Arrow } from '../../assests/more_arrow.svg';
-import { ReactComponent as Down } from '../../assests/down_arrow.svg';
-import { ReactComponent as Meeting } from '../../assests/meeting.svg';
-import { ReactComponent as Learning } from '../../assests/learning.svg';
-import { ReactComponent as Started } from '../../assests/get_started.svg';
-import Brand from '../../assests/brand_discovery_image.jpg';
-import Directory from '../small_components/directory';
-import Footer from '../small_components/footer';
-import Testimonials from '../small_components/testimonials';
+import { ReactComponent as DesktopSize } from '../Image/home_desktop_size.svg';
+import { ReactComponent as MobileSize } from '../Image/home_mobile_size.svg';
+import { ReactComponent as Arrow } from '../Image/more_arrow.svg';
+import { ReactComponent as Down } from '../Image/down_arrow.svg';
+import { ReactComponent as Meeting } from '../Image/meeting.svg';
+import { ReactComponent as Learning } from '../Image/learning.svg';
+import { ReactComponent as Started } from '../Image/get_started.svg';
+import Brand from '../Image/brand_discovery_image.jpg';
+import Directory from './directory';
+import Footer from './footer';
+import Testimonials from './testimonials';
 // import Opening from './opening';
 
 const useStyles = makeStyles((theme) => ({
@@ -119,9 +119,8 @@ function Home() {
                     <div className="home_container">
                         <Icon className="home_logo"></Icon>
                         <nav className="home_content">
-                            {/* <Link to="/join_now" className="home_joinnow">Join now</Link> */}
-                            <Link to="/sign_in" className="home_signin">Sign in</Link>
-                            <Link to="/join_now" className="home_joinnow">Sign up</Link>
+                            <Link to="/sign_in" className="home_joinnow">Join now</Link>
+                            <Link to="/join_now" className="home_signin">Sign in</Link>
                         </nav>
                     </div>
                 </div>
