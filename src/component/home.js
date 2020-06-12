@@ -136,7 +136,7 @@ function Home() {
                         <ul style={{ paddingLeft: "0px" }}>
                             <li><Link to="#" className="brand_discovery_button">Search for a job <Arrow className="brand_arrow" /></Link></li>
                             <li><Link to="#" className="brand_discovery_button">Find a person you know <Arrow className="brand_arrow" /></Link></li>
-                            <li><Link to="#" className="brand_discovery_button">learn a new skill <Arrow className="brand_arrow" /></Link></li>
+                            <li><Link to="#" className="brand_discovery_button">Learn a new skill <Arrow className="brand_arrow" /></Link></li>
                         </ul>
                         {/* <Opening /> */}
                     </section>
