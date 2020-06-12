@@ -40,7 +40,7 @@ $ npm start
 
 ## Support
 
-Show some :heart: and star the repo to support the project. Demo version:- https://ganesh1172.github.io/
+Show some :heart: and star the repo to support the project. Demo version:- https://linkedin-ui-clone.netlify.app/
 
 
 
