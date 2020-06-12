@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/linkedin-ui-clone/static/css/main.46747853.chunk.css",
-    "main.js": "/linkedin-ui-clone/static/js/main.a10cb303.chunk.js",
-    "main.js.map": "/linkedin-ui-clone/static/js/main.a10cb303.chunk.js.map",
+    "main.js": "/linkedin-ui-clone/static/js/main.a8aaa9b4.chunk.js",
+    "main.js.map": "/linkedin-ui-clone/static/js/main.a8aaa9b4.chunk.js.map",
     "runtime-main.js": "/linkedin-ui-clone/static/js/runtime-main.e748f43c.js",
     "runtime-main.js.map": "/linkedin-ui-clone/static/js/runtime-main.e748f43c.js.map",
     "static/css/2.22cbf70c.chunk.css": "/linkedin-ui-clone/static/css/2.22cbf70c.chunk.css",
     "static/js/2.660ac8eb.chunk.js": "/linkedin-ui-clone/static/js/2.660ac8eb.chunk.js",
     "static/js/2.660ac8eb.chunk.js.map": "/linkedin-ui-clone/static/js/2.660ac8eb.chunk.js.map",
     "index.html": "/linkedin-ui-clone/index.html",
-    "precache-manifest.0742a4820364704e5c99e5e7456069e1.js": "/linkedin-ui-clone/precache-manifest.0742a4820364704e5c99e5e7456069e1.js",
+    "precache-manifest.622a0e8fb4f1b0cf63f4ac949175ebb0.js": "/linkedin-ui-clone/precache-manifest.622a0e8fb4f1b0cf63f4ac949175ebb0.js",
     "service-worker.js": "/linkedin-ui-clone/service-worker.js",
     "static/css/2.22cbf70c.chunk.css.map": "/linkedin-ui-clone/static/css/2.22cbf70c.chunk.css.map",
     "static/css/main.46747853.chunk.css.map": "/linkedin-ui-clone/static/css/main.46747853.chunk.css.map",
@@ -36,6 +36,6 @@
     "static/css/2.22cbf70c.chunk.css",
     "static/js/2.660ac8eb.chunk.js",
     "static/css/main.46747853.chunk.css",
-    "static/js/main.a10cb303.chunk.js"
+    "static/js/main.a8aaa9b4.chunk.js"
   ]
 }
