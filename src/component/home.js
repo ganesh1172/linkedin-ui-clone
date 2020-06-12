@@ -153,7 +153,7 @@ function Home() {
                                     <input type="checkbox" className="see_more_less_state" />
                                     <ul className="see_more_less_list" style={{ paddingLeft: "0px" }}>
                                         <li><Link to="" className="pill">Executive Assistant, India</Link></li>
-                                        <li><Link to="" className="pill">Assistant, India</Link></li>
+                                        <li><Link to="" className="pill">Assistant Officer, India</Link></li>
                                         <li><Link to="" className="pill">Office Assistant, India</Link></li>
                                         {hidden ? null : <>
                                             <li><Link to="" className="pill">Company Secretary, India</Link></li>
