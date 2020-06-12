@@ -23,7 +23,7 @@
 <li>Material UI</li>
 </ul>
 
-<h2>Launch</h2>
+<h2>How to Launch</h2>
 
 To clone and run this application, From your command line:
 
