@@ -31,20 +31,16 @@ To clone and run this application, From your command line:
 # Clone this repository
 $ git clone https://github.com/Ganesh1172/linkedIn-login-clone.git
 
+#install package
+$ npm install
+
 #run program using
 $ npm start
 ```
 
-### Commands used to publish react files in github:
-```
-git remote set-url origin https://github.com/Ganesh1172/todo-app
-npm run build
-npm run deploy
-```
-
 ## Support
 
-Show some :heart: and star the repo to support the project. Demo version:- https://ganesh1172.github.io/linkedIn-login-clone/
+Show some :heart: and star the repo to support the project. Demo version:- https://ganesh1172.github.io/
 
 
 

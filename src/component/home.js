@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { makeStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
+import Directory from './directory';
+import Footer from './footer';
+import Testimonials from './testimonials';
 import './home.css';
 import './forgotPassword.css';
 import { ReactComponent as Icon } from '../Image/home_logo.svg';
-import { Typography } from '@material-ui/core';
-import { Link } from 'react-router-dom';
-import { makeStyles } from '@material-ui/core/styles';
 import { ReactComponent as DesktopSize } from '../Image/home_desktop_size.svg';
 import { ReactComponent as MobileSize } from '../Image/home_mobile_size.svg';
 import { ReactComponent as Arrow } from '../Image/more_arrow.svg';
@@ -13,9 +16,6 @@ import { ReactComponent as Meeting } from '../Image/meeting.svg';
 import { ReactComponent as Learning } from '../Image/learning.svg';
 import { ReactComponent as Started } from '../Image/get_started.svg';
 import Brand from '../Image/brand_discovery_image.jpg';
-import Directory from './directory';
-import Footer from './footer';
-import Testimonials from './testimonials';
 // import Opening from './opening';
 
 const useStyles = makeStyles((theme) => ({
@@ -117,10 +117,10 @@ function Home() {
             <header>
                 <div className="home_head">
                     <div className="home_container">
-                        <Icon className="home_logo"></Icon>
+                        <Link to="/"><Icon className="home_logo"></Icon></Link>
                         <nav className="home_content">
-                            <Link to="/sign_in" className="home_joinnow">Join now</Link>
-                            <Link to="/join_now" className="home_signin">Sign in</Link>
+                            <Link to="/sign_in" className="home_joinnow">Sign in</Link>
+                            <Link to="/join_now" className="home_signin">Join now</Link>
                         </nav>
                     </div>
                 </div>

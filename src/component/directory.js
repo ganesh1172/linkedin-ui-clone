@@ -1,8 +1,8 @@
 import React from 'react';
-import './directory.css';
 import { Link } from 'react-router-dom';
-import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { Typography } from '@material-ui/core';
+import './directory.css';
 import { ReactComponent as Dlogo } from '../Image/directory_logo.svg';
 
 const useStyles = makeStyles((theme) => ({
