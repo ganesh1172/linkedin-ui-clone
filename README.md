@@ -7,12 +7,11 @@
 
 <h3 align="center">World's largest professional network website UI clone.</h3>
 
-<h1 align="center">
-	<img
-     width= "800px"
-		alt="Collab Image"
-		src="src/Image/linkedIn_SignIn.jpg">
-</h1>  
+## :film_projector: DEMO
+<p align="center">
+<img src="src/Image/review.gif" width="800" alt="linkedin-ui-clone">
+</p>
+
 <h2>Introduction</h2>
 <p>Basically, I build these project just practise. Already i build 4-5 projects. But <strong>LinkedIn Login page</strong> is my first project build by own without any youtube help.</p>
 
